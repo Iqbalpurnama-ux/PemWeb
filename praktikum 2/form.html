@@ -7,42 +7,47 @@
 </head>
 <body>
     <form action="">
-        <table>
+        <table border="1" cellpadding="10" cellspacing="0">
             <tr>
-                <td><label for="name">Nama :</label></td>
-                <td><input type="text" id="name" placeholder="Nama"></td>
+                <td><label for="name">Masukan nama anda :</label></td>
+                <td><input type="text" id="name" name="name" placeholder="Nama"></td>
             </tr>
             <tr>
-                <td><label for="email">Email :</label></td>
-                <td><input type="email" id="email" placeholder="Email"></td>
+                <td><label for="email">Masukan email anda :</label></td>
+                <td><input type="email" id="email" name="email" placeholder="Email"></td>
             </tr>
             <tr>
-                <td><label for="JK">Jenis Kelamin :</label></td>
-                <td><input type="radio" name="JK" id="Laki-laki"><label for="Laki-laki">Laki-laki</label></td>
-                <td><input type="radio" name="JK" id="Perempuan"><label for="Perempuan">Perempuan</label></td>
+                <td><span>Jenis Kelamin:</span></td>
+                <td>
+                    <input type="radio" name="JK" id="Laki-laki" value="Laki-laki">
+                    <label for="Laki-laki">Laki-laki</label>
+                    <input type="radio" name="JK" id="Perempuan" value="Perempuan">
+                    <label for="Perempuan">Perempuan</label>
+                </td>
             </tr>
             <tr>
-                <td><label for="Negara">Negara :</label></td>
-                <td><select name="Negara" id="Negara">
-                    <option value="">Indonesia</option>
-                    <option value="">Vietnam</option>
-                    <option value="">Singapore</option>
-                    <option value="">India</option>
-                </select></td>
-            </tr>
-
-            <tr> 
-                <td><label for="password">Password :</label></td>
-                <td><input type="password" id="password" placeholder="Password"></td>
+                <td><label for="Negara">Negara:</label></td>
+                <td>
+                    <select name="Negara" id="Negara">
+                        <option value="Indonesia">Indonesia</option>
+                        <option value="Vietnam">Vietnam</option>
+                        <option value="Singapore">Singapore</option>
+                        <option value="India">India</option>
+                    </select>
+                </td>
             </tr>
             <tr>
-                <td><label for="alamat">Alamat :</label></td>
-                <td><textarea name="" id="alamat" placeholder="Masukan alamat anda"></textarea></td>
+                <td><label for="password">Masukkan password Anda:</label></td>
+                <td><input type="password" id="password" name="password" placeholder="Password"></td>
             </tr>
-
             <tr>
-                <td><button>Register</button></td>
+                <td><label for="alamat">Alamat:</label></td>
+                <td><textarea name="alamat" id="alamat" placeholder="Masukkan alamat Anda"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button type="submit">Register</button></td>
             </tr>
         </table>
+    </form>
 </body>
 </html>
